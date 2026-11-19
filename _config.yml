@@ -1,0 +1,37 @@
+title: Marcin Dymczyk
+description: >-
+  Marcin Dymczyk: product leader in Visual AI for robotics (Sevensense by ABB), ETH Zurich PhD,
+  and notes on DIY projects in vintage computing, Saab 900 and audio electronics.
+url: https://www.dymczyk.com
+baseurl: ""
+lang: en
+author:
+  name: Marcin Dymczyk
+  url: https://www.dymczyk.com
+social:
+  name: Marcin Dymczyk
+  links:
+    - https://www.linkedin.com/in/dymczyk/
+    - https://github.com/dymczykm
+    - https://scholar.google.com/citations?user=XYHy7U8AAAAJ
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

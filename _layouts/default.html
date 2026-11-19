@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='Georgia'>M</text></svg>">
+  {% if page.layout == 'home' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcin Dymczyk",
+    "url": "{{ site.url }}/",
+    "jobTitle": "Head of Product",
+    "worksFor": { "@type": "Organization", "name": "Sevensense by ABB" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "ETH Zurich" },
+      { "@type": "CollegeOrUniversity", "name": "Wrocław University of Science and Technology" }
+    ],
+    "sameAs": {{ site.social.links | jsonify }}
+  }
+  </script>
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}">Marcin Dymczyk</a>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <a href="https://www.linkedin.com/in/dymczyk/">LinkedIn</a> ·
+    <a href="https://github.com/dymczykm">GitHub</a> ·
+    <a href="https://scholar.google.com/citations?user=XYHy7U8AAAAJ">Google Scholar</a>
+  </footer>
+</body>
+</html>

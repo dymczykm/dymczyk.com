@@ -1,0 +1,44 @@
+:root {
+  --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --link: #0b5cad;
+  --rule: #e6e8eb; --code-bg: #f4f5f7; --callout: #f6f7f9;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16181c; --fg: #e6e8eb; --muted: #9aa3ad; --link: #7ab7ff;
+          --rule: #2b2f36; --code-bg: #1f2227; --callout: #1d2025; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main, .site-header, .site-footer { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+.site-header { padding-top: 1.5rem; }
+.site-name { font-weight: 600; color: var(--fg); text-decoration: none; }
+.site-footer { margin-top: 4rem; padding-bottom: 2rem; border-top: 1px solid var(--rule); padding-top: 1rem; color: var(--muted); font-size: .9rem; }
+.site-footer a { color: var(--muted); }
+a { color: var(--link); text-underline-offset: 2px; }
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 2rem 0 1.5rem; }
+h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; }
+h3 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+h4 { font-size: 1rem; }
+.crumbs { color: var(--muted); font-size: .9rem; margin: 2rem 0 -1rem; }
+.crumbs a { color: var(--muted); }
+.back { margin-top: 3rem; }
+img { max-width: 100%; height: auto; display: block; margin: 1.25rem auto .5rem; border-radius: 4px; }
+p > a > img { cursor: zoom-in; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; }
+code { background: var(--code-bg); padding: .1em .35em; border-radius: 4px; }
+pre { background: var(--code-bg); padding: 1rem; border-radius: 6px; overflow-x: auto; line-height: 1.45; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; display: block; overflow-x: auto; font-size: .92rem; margin: 1rem 0; }
+th, td { border: 1px solid var(--rule); padding: .35rem .6rem; text-align: left; vertical-align: top; }
+.callout { background: var(--callout); border-left: 3px solid var(--rule); padding: .75rem 1rem; margin: 1.25rem 0; border-radius: 4px; }
+.callout > :first-child { margin-top: 0; } .callout > :last-child { margin-bottom: 0; }
+blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--rule); color: var(--muted); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+p, li, td, th { overflow-wrap: anywhere; }
+td, th { overflow-wrap: normal; }
+p a, li a { overflow-wrap: anywhere; }
+h1, h2, h3 { overflow-wrap: anywhere; }

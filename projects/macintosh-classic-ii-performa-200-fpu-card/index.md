@@ -1,0 +1,69 @@
+---
+layout: page
+title: "Macintosh Classic II / Performa 200 FPU card"
+description: "A DIY MC68882 FPU card for the Macintosh Classic II and Performa 200: design notes, bill of materials and build tips."
+permalink: /projects/macintosh-classic-ii-performa-200-fpu-card/
+redirect_from:
+  - /Macintosh-Classic-II-Performa-200-FPU-card-58b920714a2843948fefd17b5c4b4849
+image: /projects/macintosh-classic-ii-performa-200-fpu-card/images/Untitled.jpg
+---
+
+[![Macintosh Classic II / Performa 200 FPU card, photo 1](images/Untitled.jpg)](originals/Untitled.jpeg)
+
+This was a funny little project during first COVID Christmas in 2020. I realized that designing an FPU card for Classic II doesn’t seem particularly complicated, as it’s mostly about correctly hooking it up to the CPU bus.
+
+After a few days I had the design ready and after a few weeks of wait for the PCBs it turned out to work very well.
+
+The project was published on the 68kmla forum: 
+
+[Classic II FPU card design](https://68kmla.org/bb/index.php?threads/classic-ii-fpu-card-design.38107/)
+
+[My GitHub repo contains a KiCAD design](https://github.com/dymczykm/classic_ii_fpu) of an expansion card that adds an MC68882 FPU to Macintosh Classic II. The board has two layers to keep the PCB cost down. It offers a switchable clock source between the system clock (16 MHz, synchronous operation) and a crystal oscillator on the board (40 MHz, asynchronous operation; tested with MC68882FN40A, the rumours claim 50 MHz will work too).
+
+[https://github.com/dymczykm/classic_ii_fpu](https://github.com/dymczykm/classic_ii_fpu)
+
+#### Results
+
+After plugging in the card, it should be immediately visible in some tools (here System Information of MacBench):
+
+![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_system_info.png)
+
+The board dramatically improves the Floating Point performance of the computer. MacBench 1.0 with an FPU@16 MHz (system clock) reports over a 13x improvement. When using an external 40 MHz oscillator, the Floating Point result goes up even a bit more - to 15.7x (it's not proportional to the clock frequency as at some point the slow 16-bit bus becomes a limiting factor):
+
+![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_benchmark.png)
+
+(look at the Floating Point row)
+
+#### Order a PCB
+
+If you want to order a PCB directly, I have created a project on PCBWay: [https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html](https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html)
+
+#### Bill of Materials
+
+| Qty | Value | Device | Package | Parts | Digikey reference |
+| --- | --- | --- | --- | --- | --- |
+| 1 |  | MC68882FN40A | PLCC68 | IC1 |  |
+| 1 |  | PLCC68 socket | PLCC68 | hosts IC1 | 2057-PLCC-68-AT-ND |
+| 1 |  | TE 5-532955-8 |  | J2 | A34313-ND |
+| 1 |  | Pin Header 2.54mm | 3 pins | J1 |  |
+| 6 | 100nF X7R | SMD capacitor | 0805 | C1-C5, C7 | 399-17169-6-ND |
+| 1 | 10uF 10V | Tantalum Cap | A (3216) | C6 | 399-4788-1-ND |
+| 1 | 51 ohm | SMD resistor | 0805 | R1 | A126374CT-ND |
+| 1 | 40 MHz | Crystal oscillator | DIP-8 | X1 | e.g. MXO45HS-2C-40M000000 |
+| 1 |  | Shunt jumper |  | over J1 | 881545-1 |
+
+(sorry, I had most components at hand, so I only have Digikey references for the rather specific ones)
+
+#### Pictures
+
+![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3241.jpg)
+
+![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3249.jpg)
+
+![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg)
+
+#### References and Credits
+
+The MC68000 KiCAD library from [https://dev.sigpipe.me/DashieElectronics/Jackalope](https://dev.sigpipe.me/DashieElectronics/Jackalope)
+
+Thanks to [pfuentes69](https://github.com/pfuentes69) for providing the missing Digikey PNs.
