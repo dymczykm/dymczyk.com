@@ -6,17 +6,23 @@ permalink: /projects/macintosh-classic-ii-performa-200-fpu-card/
 redirect_from:
   - /Macintosh-Classic-II-Performa-200-FPU-card-58b920714a2843948fefd17b5c4b4849
 image: /projects/macintosh-classic-ii-performa-200-fpu-card/images/Untitled.jpg
+date: 2021-01-28
+related:
+  - mactwister-maccon-dayna-etherport-rj45-breakout
+  - diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container
+  - macintosh-portable-battery-charger-tray
 ---
 
-[![Macintosh Classic II / Performa 200 FPU card, photo 1](images/Untitled.jpg)](originals/Untitled.jpeg)
+[![Four assembled Macintosh Classic II FPU cards with MC68882 chips](images/Untitled.jpg){: width="1221" height="916"}](originals/Untitled.jpeg)
 
 This was a fun little project during the first COVID Christmas in 2020. I realized that designing an FPU card for the Classic II doesn’t seem particularly complicated, as it’s mostly about correctly hooking it up to the CPU bus.
 
 After a few days I had the design ready and after a few weeks of waiting for the PCBs it turned out to work very well.
 
-The project was published on the 68kMLA forum:
+The project was published on the 68kMLA forum and on Reddit:
 
-[Classic II FPU card design](https://68kmla.org/bb/index.php?threads/classic-ii-fpu-card-design.38107/)
+- [Classic II FPU card design on 68kMLA](https://68kmla.org/bb/index.php?threads/classic-ii-fpu-card-design.38107/)
+- [Classic II FPU card design on r/VintageApple](https://www.reddit.com/r/VintageApple/comments/l6rvgt/classic_ii_fpu_card_design/)
 
 [My GitHub repo contains a KiCAD design](https://github.com/dymczykm/classic_ii_fpu) of an expansion card that adds an MC68882 FPU to the Macintosh Classic II. The board has two layers to keep the PCB cost down. It offers a switchable clock source between the system clock (16 MHz, synchronous operation) and a crystal oscillator on the board (40 MHz, asynchronous operation; tested with MC68882FN40A, the rumours claim 50 MHz will work too).
 
@@ -26,11 +32,11 @@ The project was published on the 68kMLA forum:
 
 After plugging in the card, it should be immediately visible in some tools (here System Information of MacBench):
 
-![MacBench System Information showing the MC68882 FPU](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_system_info.png)
+![MacBench System Information showing the MC68882 FPU](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_system_info.png){: width="512" height="342" loading="lazy"}
 
 The board dramatically improves the Floating Point performance of the computer. MacBench 1.0 with an FPU@16 MHz (system clock) reports over a 13x improvement. When using an external 40 MHz oscillator, the Floating Point result goes up even a bit more - to 15.7x (it's not proportional to the clock frequency as at some point the slow 16-bit bus becomes a limiting factor):
 
-![MacBench 1.0 results with the FPU card](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_benchmark.png)
+![MacBench 1.0 results with the FPU card](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_benchmark.png){: width="512" height="342" loading="lazy"}
 
 (look at the Floating Point row)
 
@@ -56,11 +62,11 @@ If you want to order a PCB directly, I have created a project on PCBWay: [https
 
 ## Pictures
 
-![Classic II FPU card, photo 1](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3241.jpg)
+![Top of the Macintosh Classic II FPU card: MC68882 in a PLCC socket and a 40 MHz oscillator](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3241.jpg){: width="888" height="666" loading="lazy"}
 
-![Classic II FPU card, photo 2](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3249.jpg)
+![Bottom side of the Macintosh Classic II FPU card PCB](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3249.jpg){: width="1184" height="888" loading="lazy"}
 
-![Classic II FPU card, photo 3](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg)
+![FPU card plugged into the Macintosh Classic II logic board](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg){: width="666" height="888" loading="lazy"}
 
 ## References and credits
 

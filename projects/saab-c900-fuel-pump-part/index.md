@@ -6,11 +6,16 @@ permalink: /projects/saab-c900-fuel-pump-part/
 redirect_from:
   - /Saab-C900-fuel-pump-part-57bfef43155b4ac3a5e212a30c230e90
 image: /projects/saab-c900-fuel-pump-part/images/Untitled.png
+date: 2020-11-01
+related:
+  - saab-c900-air-distribution-wiring
+  - hubert-the-humidity-logger
+  - rupes-lhr21-esc-repair
 ---
 
 In my experience, many, if not all, OEM Saab 900 Classic fuel pumps from 16V ‘90+ Turbos had a Bosch pump cartridge, like this:
 
-[![Saab C900 fuel pump part number, photo 1](images/Untitled.png)](originals/Untitled.png)
+[![Bosch fuel pump cartridge 0 580 453 945 from a Saab 900 Classic](images/Untitled.png){: width="1164" height="1552"}](originals/Untitled.png)
 
 The Bosch number is: 0 580 453 945 (0580453945).
 

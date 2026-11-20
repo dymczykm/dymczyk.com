@@ -5,6 +5,11 @@ description: "An adapter PCB to replace the hard-to-find 4-pin high-voltage PSU 
 permalink: /projects/tektronix-22xx-4-pin-cap-adapter/
 redirect_from:
   - /Tektronix-22xx-4-pin-cap-adapter-f6a031720d164a31ae33c158cec04b6e
+date: 2020-12-28
+related:
+  - braun-sk2-2-restoration
+  - macintosh-portable-powerbook-1x0-power-adapter-bench
+  - macintosh-classic-ii-performa-200-fpu-card
 ---
 
 When servicing vintage CD players, I need a capable scope with 50-100 MHz bandwidth. I came across a neat Tektronix 2232, working but clearly requiring new capacitors.
@@ -17,9 +22,9 @@ The project files are in the GitHub repo:
 
 [https://github.com/dymczykm/22xx_tek_cap_4pin](https://github.com/dymczykm/22xx_tek_cap_4pin)
 
-![Tektronix 22xx 4-pin cap adapter, render 1](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/bottom_view_3d.png)
+![3D render of the Tektronix 22xx 4-pin capacitor adapter PCB, bottom view](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/bottom_view_3d.png){: width="300" height="273"}
 
-![Tektronix 22xx 4-pin cap adapter, render 2](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/tek_4pin.png)
+![3D render of the adapter mounted under a snap-in capacitor](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/tek_4pin.png){: width="300" height="273" loading="lazy"}
 
 ### Which devices does it fit?
 
@@ -34,9 +39,9 @@ Parts used:
 
 With these parts, the cap with an adapter nicely fits under the HV plastic shield and the pins are well aligned with the PCB.
 
-![Tektronix 22xx 4-pin cap adapter with a snap-in capacitor, photo 1](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/IMG_2318.JPG)
+![Assembled adapter: a Nichicon snap-in capacitor on the 4-pin adapter PCB](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/IMG_2318.JPG){: width="300" height="300" loading="lazy"}
 
-![Tektronix 22xx 4-pin cap adapter with a snap-in capacitor, photo 2](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/IMG_2319.JPG)
+![Adapter with the new capacitor installed in the Tektronix 2232 power supply](https://github.com/dymczykm/22xx_tek_cap_4pin/raw/main/pictures/IMG_2319.JPG){: width="600" height="600" loading="lazy"}
 
 ### References
 
