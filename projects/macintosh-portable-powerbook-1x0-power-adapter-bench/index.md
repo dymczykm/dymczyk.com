@@ -6,6 +6,11 @@ permalink: /projects/macintosh-portable-powerbook-1x0-power-adapter-bench/
 redirect_from:
   - /Macintosh-Portable-Powerbook-1x0-power-adapter-bench-59e0aad1921d4e68ad3d670d351e096e
 image: /projects/macintosh-portable-powerbook-1x0-power-adapter-bench/images/Untitled.png
+date: 2022-07-28
+related:
+  - macintosh-portable-battery-charger-tray
+  - mactwister-maccon-dayna-etherport-rj45-breakout
+  - tektronix-22xx-4-pin-cap-adapter
 ---
 
 Online, you can find a lot of discussions related to what power brick to use with the Macintosh Portable (the original is M5136 7.5V 1.5A), whether it has to be exactly 1.5A or can be more, and whether it’s worth recapping the power supplies.
@@ -27,7 +32,7 @@ By the way, here’s the archived Apple Technical Article about the PSU part num
 
 Regarding the claims that using a higher-wattage adapter on the Portable might be dangerous, Apple in this TA seems to be suggesting something similar for PB100 and PB150:
 
-[![Macintosh Portable & PowerBook 1x0 power adapter bench, photo 1](images/Untitled.png)](originals/Untitled.png)
+[![Apple Technical Article warning against adapters above 19 W for PowerBook 100 and 150](images/Untitled.png){: width="312" height="86"}](originals/Untitled.png)
 
 ## Is it worth recapping?
 
@@ -37,11 +42,11 @@ The old capacitors in those PSUs tend to lose rated capacitance and leak. The cu
 
 Leakage is another problem - the capacitor goo really eats out the soldermask and copper traces, making the PSUs simply non-functional. Out of the three, ADP-17AB had pretty apparent traces of capacitor leakage:
 
-[![The soldermask was eaten away already and the copper was affected.](images/WhatsApp_Image_2022-07-26_at_09.52.21_copy.jpg)](originals/WhatsApp_Image_2022-07-26_at_09.52.21_copy.jpeg)
+[![ADP-17AB power adapter PCB with soldermask and copper damaged by leaking capacitors](images/WhatsApp_Image_2022-07-26_at_09.52.21_copy.jpg){: width="1503" height="1239" loading="lazy"}](originals/WhatsApp_Image_2022-07-26_at_09.52.21_copy.jpeg)
 
 The soldermask was eaten away already and the copper was affected.
 
-[![Fortunately, the copper traces cleaned up nicely - after recapping they were covered with a PCB lacquer.](images/WhatsApp_Image_2022-07-28_at_21.40.30.jpg)](originals/WhatsApp_Image_2022-07-28_at_21.40.30.jpeg)
+[![ADP-17AB power adapter PCB after cleaning the capacitor leakage](images/WhatsApp_Image_2022-07-28_at_21.40.30.jpg){: width="1365" height="858" loading="lazy"}](originals/WhatsApp_Image_2022-07-28_at_21.40.30.jpeg)
 
 Fortunately, the copper traces cleaned up nicely - after recapping they were covered with a PCB lacquer.
 
@@ -51,7 +56,7 @@ I set up an experiment, loading the PSUs with various combinations of power resi
 
 Here’s the result:
 
-[![Voltage-current curves of the M5136, M5651 and ADP-17AB adapters](images/powerbook_adapters.png)](originals/powerbook_adapters.png)
+[![Voltage-current curves of the M5136, M5651 and ADP-17AB adapters before and after recapping](images/powerbook_adapters.png){: width="1280" height="960" loading="lazy"}](originals/powerbook_adapters.png)
 
 Conclusions?
 

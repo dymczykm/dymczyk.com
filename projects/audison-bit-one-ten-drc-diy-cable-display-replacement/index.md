@@ -6,6 +6,11 @@ permalink: /projects/audison-bit-one-ten-drc-diy-cable-display-replacement/
 redirect_from:
   - /Audison-Bit-One-Ten-DRC-DIY-cable-display-replacement-f65883d0d83741eca8ccdba9f23a0a7a
 image: /projects/audison-bit-one-ten-drc-diy-cable-display-replacement/images/drc-cable.jpg
+date: 2023-06-11
+related:
+  - rupes-lhr21-esc-repair
+  - braun-sk2-2-restoration
+  - saab-c900-air-distribution-wiring
 ---
 
 A while ago I bought a cheap, used Audison Bit One with a DRC, but without the cable included. The first step was to put together a cable, but then it turned out that the LCD display of the unit doesn’t work well (most lines were dead) and needed replacement.
@@ -16,18 +21,18 @@ The DRC cable is a standard RJ-11 telephone cable with a 7-pin 2.54mm female hea
 
 It actually uses 6 wires and one location in the female header remains empty (it should actually be blocked with something, as it acts as a polarity key to avoid plugging in the connector the wrong way).
 
-[![DIY DRC cable: RJ-11 plug on one end, 7-pin female header on the other](images/drc-cable.jpg)](originals/Untitled.jpg)
+[![DIY Audison DRC cable: RJ-11 plug on one end, 7-pin female header on the other](images/drc-cable.jpg){: width="1600" height="1200"}](originals/Untitled.jpg)
 
 When plugged into the DRC, the ordering of colors looks as follows:
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 2: wire colour order at the DRC](images/Untitled%201.jpg)](originals/Untitled%201.jpg)
+[![Audison DRC remote with the DIY cable plugged in, showing the wire colour order](images/Untitled%201.jpg){: width="1600" height="1200" loading="lazy"}](originals/Untitled%201.jpg)
 
 <aside class="callout" markdown="1">
 ⚠️ Depending on the RJ-11 cable type (straight or crossed), the order of wires in the RJ-11 plug might differ. Getting it wrong might fry your DRC and/or the DSP.
 
 My RJ-11 plug:
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 3](images/Untitled.png)](originals/Untitled.png)
+[![Close-up of the RJ-11 plug showing the order of the wire colours](images/Untitled.png){: width="268" height="201" loading="lazy"}](originals/Untitled.png)
 
 </aside>
 
@@ -43,7 +48,7 @@ In the meantime, those displays have become hard to find, but you can buy an equ
 
 A few things need to be adjusted though - there are some differences between the displays (top - new one, bottom - original from the DRC):
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 4: new display (top) vs. original (bottom)](images/Untitled.jpg)](originals/Untitled.jpeg)
+[![Back of the new NMTC-S16208X LCD (top) next to the original DRC display (bottom)](images/Untitled.jpg){: width="768" height="1024" loading="lazy"}](originals/Untitled.jpeg)
 
 ### Adjustment #1: Polarity of the backlight
 
@@ -57,11 +62,11 @@ Only after measuring a bit more I realized that R9 and R10 are wired in parallel
 
 Contrast adjustment is done via resistors on the main DRC board.
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 5](images/D772F307-A1B9-4F17-AAE1-2EC1CF9FBFA1_1_105_c.jpg)](originals/D772F307-A1B9-4F17-AAE1-2EC1CF9FBFA1_1_105_c.jpeg)
+[![Audison DRC main board with the contrast resistors circled](images/D772F307-A1B9-4F17-AAE1-2EC1CF9FBFA1_1_105_c.jpg){: width="986" height="527" loading="lazy"}](originals/D772F307-A1B9-4F17-AAE1-2EC1CF9FBFA1_1_105_c.jpeg)
 
 They are a simple voltage divider between GND and VCC. What worked well for me (sorry for the messy soldering, it was just a test):
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 6](images/Untitled%201.png)](originals/Untitled%201.png)
+[![2.4 kOhm and 560 Ohm SMD resistors soldered in to set the DRC display contrast](images/Untitled%201.png){: width="343" height="356" loading="lazy"}](originals/Untitled%201.png)
 
 So 2.4kΩ for the top resistor and 560Ω for the bottom one.
 
@@ -69,4 +74,4 @@ So 2.4kΩ for the top resistor and 560Ω for the bottom one.
 
 And… it’s running!
 
-[![Audison Bit One/Ten DRC: DIY cable + display replacement, photo 7](images/Untitled%202.jpg)](originals/Untitled%202.jpg)
+[![Repaired Audison DRC with the new display working, next to the Bit One](images/Untitled%202.jpg){: width="1600" height="1200" loading="lazy"}](originals/Untitled%202.jpg)

@@ -6,6 +6,11 @@ permalink: /projects/saab-c900-air-distribution-wiring/
 redirect_from:
   - /Saab-C900-air-distribution-wiring-80286e5a66d24af1857036c841c3acf3
 image: /projects/saab-c900-air-distribution-wiring/images/IMG_20180620_192652.jpg
+date: 2018-06-20
+related:
+  - saab-c900-fuel-pump-part
+  - hubert-the-humidity-logger
+  - rupes-lhr21-esc-repair
 ---
 
 A classic problem for Saab 900 Classic (C900) DIYers after removing the dashboard panel is how to reconnect the wiring of the air distribution switch. This is the knob in the dashboard that sends air to the windscreen, the face vents or the floor. The back of the switch has simple spade connectors, and nothing stops you from plugging a wire onto the wrong terminal, so write down the colours before you pull anything off.
@@ -25,11 +30,11 @@ I checked this on my own car only. The 900 Classic was built for model years 197
 
 View from the top, with the top gray connector disconnected:
 
-[![Back of the Saab 900 air distribution switch with the top gray wire disconnected](images/IMG_20180620_192652.jpg)](originals/IMG_20180620_192652.jpeg)
+[![Back of the Saab 900 air distribution switch with the top gray wire disconnected](images/IMG_20180620_192652.jpg){: width="1600" height="1200"}](originals/IMG_20180620_192652.jpeg)
 
 View after disconnecting the top two cables:
 
-[![Back of the Saab 900 air distribution switch with the gray and gray-violet wires disconnected](images/IMG_20180620_192745.jpg)](originals/IMG_20180620_192745.jpeg)
+[![Back of the Saab 900 air distribution switch with the gray and gray-violet wires disconnected](images/IMG_20180620_192745.jpg){: width="1600" height="1200" loading="lazy"}](originals/IMG_20180620_192745.jpeg)
 
 ## What the switch does
 
