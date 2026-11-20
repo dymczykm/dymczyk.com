@@ -7,7 +7,7 @@ title: "Marcin Dymczyk"
 
 Hey, I’m Marcin and I’m leading Product at Sevensense by ABB, an ABB Robotics unit providing Visual AI capabilities to various kinds of robots.
 
-Previously, I co-founded and served as Chief Product Officer at [Sevensense Robotics](https://www.sevensense.ai/), where we were building the robotic eyes and the brains. During that time, my work focused on building a bridge between the cutting-edge Visual AI technology and the market and translating the tech into a viable product. It was a truly exciting journey to start with a research-stage technology and some business concepts and finish with hundreds of AI-equipped robots in the field! In December 2023, Sevensense was acquired by ABB.
+Previously, I co-founded and served as Chief Product Officer at [Sevensense Robotics](https://www.sevensense.ai/), where we were building the robotic eyes and the brains. During that time, my work focused on building a bridge between the cutting-edge Visual AI technology and the market and translating the tech into a viable product. It was a truly exciting journey to start with a research-stage technology and some business concepts and finish with hundreds of AI-equipped robots in the field! In January 2024, Sevensense was acquired by ABB.
 
 In 2019, I finished my PhD at [Autonomous Systems Lab](https://asl.ethz.ch/) of ETH Zurich with Prof. Roland Siegwart. My thesis “[Lifelong Mapping and Robust Place Recognition Using Cameras](https://books.google.com/books/about/Lifelong_Mapping_and_Robust_Place_Recogn.html?id=1gbmxgEACAAJ)” summarizes my research interests and major publications well. During my PhD, I also stayed for one year at Google Zurich, working on Project Tango and the Visual Positioning System, which is now a part of Google Maps.
 
