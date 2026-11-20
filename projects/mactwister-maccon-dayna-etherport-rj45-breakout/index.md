@@ -10,17 +10,17 @@ image: /projects/mactwister-maccon-dayna-etherport-rj45-breakout/images/IMG_1487
 
 [![MacTwister MacCon/Dayna/Etherport RJ45 breakout, photo 1](images/IMG_1487.png)](originals/IMG_1487.png)
 
-The MacTwister breakout board provides a standard RJ45 to Macintosh SE and Macintosh SE/30 computers equipped with common Asante MacCon, Kinetics/Shiva Etherport and Dayna Daynaport E/SI cards.
+The MacTwister breakout board provides a standard RJ45 port for Macintosh SE and Macintosh SE/30 computers equipped with common Asante MacCon, Kinetics/Shiva Etherport and Dayna DaynaPort E/SI cards.
 
-The first motivation is that many of those cards got separated from their breakout boards over the course of >30 years, making them virtually useless. On the other hand, the network card prices are going up and a project to reproduce the connector board starts to make economical sense. I myself came across a MacCon for SE which I really wanted to bring back to life.
+The first motivation is that many of those cards got separated from their breakout boards over the course of more than 30 years, making them virtually useless. At the same time, network card prices keep going up, so reproducing the connector board starts to make economic sense. I myself came across a MacCon for SE which I really wanted to bring back to life.
 
 The second motivation is that most of the connector cards only offer AUI and BNC (10BASE2) connectors, requiring an external box (such as CentreCOM AT-210T) that sticks out and doesn’t look too cool. Maybe I’m unlucky, but none of the cards I own actually came with a twisted pair interface.
 
 Goals of the design:
 
-- Support most common cards for SE and SE/30: MacCon, Etherport and Dayna.
+- Support the most common cards for SE and SE/30: MacCon, Etherport and Dayna.
 - Support a number of transceiver chips to avoid being locked into a single no-longer-produced model, preferably without component changes.
-- Use modern components (eg. an RJ45 jack with magnetics) to avoid sourcing anything exotic apart from transceivers.
+- Use modern components (e.g. an RJ45 jack with magnetics) to avoid sourcing anything exotic apart from transceivers.
 
 ## Questions & Answers
 
@@ -29,25 +29,25 @@ Goals of the design:
 Kinetics/Shiva Etherport and MacCon cards have different pinouts of the 16-pin cable to the connector card.
 
 **Please be extra careful about using the right connector for your card.
-Please be extra careful about correctly orienting the plug in the socket (mind the Pin 1 markings). Note that MacCon cards do not use the common Pin 1 convention of the IDC connectors.**
+Please be extra careful about correctly orienting the plug in the socket (mind the pin 1 markings). Note that MacCon cards do not use the common pin 1 convention of the IDC connectors.**
 
 [![Kinetics Etherport SE. Note that the pin 1 marking (P1) matches the red conductor on the IDC tape.](images/IMG_5749.jpg)](originals/IMG_5749.jpeg)
 
 Kinetics Etherport SE. Note that the pin 1 marking (P1) matches the red conductor on the IDC tape.
 
-[![Asant MacCon. The pin 1 on the PCB (square pad) does not match the pin 1 on the IDC tape. ](images/maccon.png)](originals/maccon.png)
+[![Asante MacCon. The pin 1 on the PCB (square pad) does not match the pin 1 on the IDC tape.](images/maccon.png)](originals/maccon.png)
 
-Asant MacCon. The pin 1 on the PCB (square pad) does not match the pin 1 on the IDC tape. 
+Asante MacCon. The pin 1 on the PCB (square pad) does not match the pin 1 on the IDC tape.
 
-[![MacTwister connected to the early revision of MaCon. Please note the Pin1 markings in the picture. On MacCon, the PCB suggests Pin1 is actually on the other side, ignore it.](images/IMG_8356.jpg)](originals/IMG_8356.jpeg)
+[![MacTwister connected to an early revision of MacCon. Please note the pin 1 markings in the picture. On MacCon, the PCB suggests pin 1 is actually on the other side; ignore it.](images/IMG_8356.jpg)](originals/IMG_8356.jpeg)
 
-MacTwister connected to the early revision of MaCon. Please note the Pin1 markings in the picture. On MacCon, the PCB suggests Pin1 is actually on the other side, ignore it.
+MacTwister connected to an early revision of MacCon. Please note the pin 1 markings in the picture. On MacCon, the PCB suggests pin 1 is actually on the other side; ignore it.
 
 Both 16-pin connectors can be used without any changes to the board.
 
 ### What’s the deal with three different sockets for transceiver ICs?
 
-This board depends on No-Longer-Available AUI to Twisted Pair converters. Those transceivers has not been in production since decades so this design incorporates three different chips to let you pick a chip that actually shows up on the market: LXT902PC, AM79C89 or T7220 / T7220A. 
+This board depends on no-longer-available AUI to twisted pair converters. Those transceivers have been out of production for decades, so this design incorporates three different chips to let you pick a chip that actually shows up on the market: LXT902PC, AM79C89 or T7220 / T7220A.
 
 [![The same MacTwister design working with three different transceivers: from left to right T7220, LXT902PC and AM79C89.](images/IMG_1484.jpg)](originals/IMG_1484.jpeg)
 
@@ -59,19 +59,19 @@ Swapping chips requires no changes apart from bridging JP4, JP5 and JP6 jumpers 
 
 ### What was it tested with?
 
-The card was tested on SE (MacCon and Etherport cards) and SE/30 (MacCon).
+The card was tested on the SE (MacCon and Etherport cards) and SE/30 (MacCon).
 
 [![MacTwister card fitting and happily exchanging data on Macintosh SE.](images/IMG_8376.jpg)](originals/IMG_8376.jpeg)
 
 MacTwister card fitting and happily exchanging data on Macintosh SE.
 
-[![Macintosh SE surfing modern web.](images/IMG_8367.jpg)](originals/IMG_8367.jpeg)
+[![Macintosh SE surfing the modern web.](images/IMG_8367.jpg)](originals/IMG_8367.jpeg)
 
-Macintosh SE surfing modern web.
+Macintosh SE surfing the modern web.
 
 ### What was the journey to design it?
 
-The circuit is fairly simple, but it took a few iterations to get it right. The transceivers are niche and their datasets had a few unclarities or even mistakes.
+The circuit is fairly simple, but it took a few iterations to get it right. The transceivers are niche and their datasheets had a few ambiguities or even mistakes.
 
 It turned out that T7220A is not just a revision of T7220 ;)
 
