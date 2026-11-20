@@ -8,7 +8,7 @@ redirect_from:
 image: /projects/saab-c900-air-distribution-wiring/images/IMG_20180620_192652.jpg
 ---
 
-One of the classic issues of Saab C900 DIYers after removing the dashboard panel is howto reconnect the wiring of the air distribution switch. Here’s a short recap of how it’s wired on my ‘92 convertible, top to bottom:
+A classic problem for Saab C900 DIYers after removing the dashboard panel is how to reconnect the wiring of the air distribution switch. Here’s a short recap of how it’s wired on my ‘92 convertible, top to bottom:
 
 1. Gray
 2. Gray-Violet

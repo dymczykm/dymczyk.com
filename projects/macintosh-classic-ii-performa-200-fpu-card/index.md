@@ -10,35 +10,35 @@ image: /projects/macintosh-classic-ii-performa-200-fpu-card/images/Untitled.jpg
 
 [![Macintosh Classic II / Performa 200 FPU card, photo 1](images/Untitled.jpg)](originals/Untitled.jpeg)
 
-This was a funny little project during first COVID Christmas in 2020. I realized that designing an FPU card for Classic II doesn’t seem particularly complicated, as it’s mostly about correctly hooking it up to the CPU bus.
+This was a fun little project during the first COVID Christmas in 2020. I realized that designing an FPU card for the Classic II doesn’t seem particularly complicated, as it’s mostly about correctly hooking it up to the CPU bus.
 
-After a few days I had the design ready and after a few weeks of wait for the PCBs it turned out to work very well.
+After a few days I had the design ready and after a few weeks of waiting for the PCBs it turned out to work very well.
 
-The project was published on the 68kmla forum: 
+The project was published on the 68kMLA forum:
 
 [Classic II FPU card design](https://68kmla.org/bb/index.php?threads/classic-ii-fpu-card-design.38107/)
 
-[My GitHub repo contains a KiCAD design](https://github.com/dymczykm/classic_ii_fpu) of an expansion card that adds an MC68882 FPU to Macintosh Classic II. The board has two layers to keep the PCB cost down. It offers a switchable clock source between the system clock (16 MHz, synchronous operation) and a crystal oscillator on the board (40 MHz, asynchronous operation; tested with MC68882FN40A, the rumours claim 50 MHz will work too).
+[My GitHub repo contains a KiCAD design](https://github.com/dymczykm/classic_ii_fpu) of an expansion card that adds an MC68882 FPU to the Macintosh Classic II. The board has two layers to keep the PCB cost down. It offers a switchable clock source between the system clock (16 MHz, synchronous operation) and a crystal oscillator on the board (40 MHz, asynchronous operation; tested with MC68882FN40A, the rumours claim 50 MHz will work too).
 
 [https://github.com/dymczykm/classic_ii_fpu](https://github.com/dymczykm/classic_ii_fpu)
 
-#### Results
+## Results
 
 After plugging in the card, it should be immediately visible in some tools (here System Information of MacBench):
 
-![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_system_info.png)
+![MacBench System Information showing the MC68882 FPU](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_system_info.png)
 
 The board dramatically improves the Floating Point performance of the computer. MacBench 1.0 with an FPU@16 MHz (system clock) reports over a 13x improvement. When using an external 40 MHz oscillator, the Floating Point result goes up even a bit more - to 15.7x (it's not proportional to the clock frequency as at some point the slow 16-bit bus becomes a limiting factor):
 
-![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_benchmark.png)
+![MacBench 1.0 results with the FPU card](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/classic_ii_benchmark.png)
 
 (look at the Floating Point row)
 
-#### Order a PCB
+## Order a PCB
 
 If you want to order a PCB directly, I have created a project on PCBWay: [https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html](https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html)
 
-#### Bill of Materials
+## Bill of materials
 
 | Qty | Value | Device | Package | Parts | Digikey reference |
 | --- | --- | --- | --- | --- | --- |
@@ -54,15 +54,15 @@ If you want to order a PCB directly, I have created a project on PCBWay: [https
 
 (sorry, I had most components at hand, so I only have Digikey references for the rather specific ones)
 
-#### Pictures
+## Pictures
 
-![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3241.jpg)
+![Classic II FPU card, photo 1](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3241.jpg)
 
-![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3249.jpg)
+![Classic II FPU card, photo 2](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3249.jpg)
 
-![](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg)
+![Classic II FPU card, photo 3](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg)
 
-#### References and Credits
+## References and credits
 
 The MC68000 KiCAD library from [https://dev.sigpipe.me/DashieElectronics/Jackalope](https://dev.sigpipe.me/DashieElectronics/Jackalope)
 
