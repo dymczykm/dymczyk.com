@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Macintosh Portable Battery Charger Tray"
+title: "Macintosh Portable battery charger tray"
 description: "A 3D-printed charger tray for Macintosh Portable lead-acid batteries that makes reliable contact with the recessed terminals. STL included."
 permalink: /projects/macintosh-portable-battery-charger-tray/
 redirect_from:
@@ -16,7 +16,7 @@ So I kept my stash of batteries separately, but then what’s the best way to ch
 
 Apple actually offered an external charger for the Portable:
 
-[![Macintosh Portable Battery Charger Tray, photo 1](images/1_fb695a1003c1489d23b6e6f74204369b.jpg)](originals/1_fb695a1003c1489d23b6e6f74204369b.jpg)
+[![Macintosh Portable battery charger tray, photo 1](images/1_fb695a1003c1489d23b6e6f74204369b.jpg)](originals/1_fb695a1003c1489d23b6e6f74204369b.jpg)
 
 Source: [https://www.worthpoint.com/worthopedia/apple-brand-macintosh-portable-1801509065](https://www.worthpoint.com/worthopedia/apple-brand-macintosh-portable-1801509065)
 
@@ -28,7 +28,7 @@ The idea was fairly simple: make a 3D-printable tray that holds the battery and 
 
 The original charger used spring-loaded contacts (i.e. really large-diameter pogo pins). The choice at the usual suppliers was limited, but I found good candidates on Aliexpress:
 
-[![Macintosh Portable Battery Charger Tray, photo 2](images/Untitled.png)](originals/Untitled.png)
+[![Macintosh Portable battery charger tray, photo 2](images/Untitled.png)](originals/Untitled.png)
 
 Link: [https://www.aliexpress.com/item/1005003405928702.html](https://www.aliexpress.com/item/1005003405928702.html) (make sure to pick A578)
 
@@ -44,7 +44,7 @@ Then I designed a tray resembling the original one in Fusion 360 around the batt
 
 And that’s it - print it, press the pins into the printed model, solder some wires and you’re done. The brown color of the tray is not exactly my choice - it’s recycled filament to limit the environmental impact of 3D printing 🌍
 
-[![Macintosh Portable Battery Charger Tray, photo 3](images/IMG_1478_small.png)](originals/IMG_1478_small.png)
+[![Macintosh Portable battery charger tray, photo 3](images/IMG_1478_small.png)](originals/IMG_1478_small.png)
 
 <aside class="callout" markdown="1">
 💾 Here’s the STL file to print the battery tray:
@@ -57,7 +57,7 @@ And that’s it - print it, press the pins into the printed model, solder some w
 
 I used the tray together with an RC battery charger set to charge a 3-cell lead battery. I crimped a typical JST SYP battery connector to make sure the tray is safe, without a possibility to short the battery or to invert the polarity.
 
-[![Macintosh Portable Battery Charger Tray, photo 4](images/Untitled.jpg)](originals/Untitled.jpg)
+[![Macintosh Portable battery charger tray, photo 4](images/Untitled.jpg)](originals/Untitled.jpg)
 
 ## Appendix: Macintosh Portable battery cell info
 

@@ -38,7 +38,7 @@ The board dramatically improves the Floating Point performance of the computer. 
 
 If you want to order a PCB directly, I have created a project on PCBWay: [https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html](https://www.pcbway.com/project/shareproject/Macintosh_Classic_II_FPU_card.html)
 
-## Bill of Materials
+## Bill of materials
 
 | Qty | Value | Device | Package | Parts | Digikey reference |
 | --- | --- | --- | --- | --- | --- |
@@ -62,7 +62,7 @@ If you want to order a PCB directly, I have created a project on PCBWay: [https
 
 ![Classic II FPU card, photo 3](https://github.com/dymczykm/classic_ii_fpu/raw/main/img/IMG_3247.jpg)
 
-## References and Credits
+## References and credits
 
 The MC68000 KiCAD library from [https://dev.sigpipe.me/DashieElectronics/Jackalope](https://dev.sigpipe.me/DashieElectronics/Jackalope)
 

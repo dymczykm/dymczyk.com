@@ -40,14 +40,14 @@ For a long time I have felt that I gained a lot from open-source projects and DI
 
 - [MacTwister MacCon/Dayna/Etherport RJ45 breakout](/projects/mactwister-maccon-dayna-etherport-rj45-breakout/)
 - [Macintosh Classic II / Performa 200 FPU card](/projects/macintosh-classic-ii-performa-200-fpu-card/)
-- [DIY Macintosh 128K/512K/Plus mouse **from an E-Waste container**](/projects/diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container/)
-- [Macintosh Portable Battery Charger Tray](/projects/macintosh-portable-battery-charger-tray/)
+- [DIY Macintosh 128K/512K/Plus mouse **from an e-waste container**](/projects/diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container/)
+- [Macintosh Portable battery charger tray](/projects/macintosh-portable-battery-charger-tray/)
 - [Macintosh Portable & PowerBook 1x0 power adapter bench](/projects/macintosh-portable-powerbook-1x0-power-adapter-bench/)
 
 ### Saab 900 Classic and the audio system
 
 - [Saab C900 air distribution wiring](/projects/saab-c900-air-distribution-wiring/)
-- [Saab C900 fuel pump part #](/projects/saab-c900-fuel-pump-part/)
+- [Saab C900 fuel pump part number](/projects/saab-c900-fuel-pump-part/)
 - [Audison Bit One/Ten DRC: DIY cable + display replacement](/projects/audison-bit-one-ten-drc-diy-cable-display-replacement/)
 - [Rupes LHR21 ESC repair](/projects/rupes-lhr21-esc-repair/)
 
@@ -55,4 +55,4 @@ For a long time I have felt that I gained a lot from open-source projects and DI
 
 - [Tektronix 22xx 4-pin cap adapter](/projects/tektronix-22xx-4-pin-cap-adapter/)
 - [Braun SK2/2 restoration](/projects/braun-sk2-2-restoration/)
-- [Hubert the Humidity Logger](/projects/hubert-the-humidity-logger/)
+- [Hubert the humidity logger](/projects/hubert-the-humidity-logger/)

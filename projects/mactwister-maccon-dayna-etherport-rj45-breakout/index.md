@@ -22,7 +22,7 @@ Goals of the design:
 - Support a number of transceiver chips to avoid being locked into a single no-longer-produced model, preferably without component changes.
 - Use modern components (e.g. an RJ45 jack with magnetics) to avoid sourcing anything exotic apart from transceivers.
 
-## Questions & Answers
+## Questions & answers
 
 ### What’s the deal with two 16-pin connectors?
 

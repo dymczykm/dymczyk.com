@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Hubert the Humidity Logger"
+title: "Hubert the humidity logger"
 description: "Hubert: a DIY 4G/LTE humidity logger for a garage, built on the Maduino Zero 4G (SIM7600) and a BME280 sensor. Hardware and firmware notes."
 permalink: /projects/hubert-the-humidity-logger/
 redirect_from:
@@ -39,7 +39,7 @@ To actually measure the humidity, I decided to use a simple Bosch BME280 breakou
 
 The breakout board to host Maduino turned out pretty simple:
 
-[![Hubert the Humidity Logger, photo 1](images/Screenshot_2023-08-13_at_22.35.40.png)](originals/Screenshot_2023-08-13_at_22.35.40.png)
+[![Hubert the humidity logger, photo 1](images/Screenshot_2023-08-13_at_22.35.40.png)](originals/Screenshot_2023-08-13_at_22.35.40.png)
 
 Simple headers to plug in Maduino, 4 LEDs acting as a bargraph to visualize the humidity level directly, ACT and ERR LEDs to show that something is going on (or not 🙃). Additionally, a 6-pin header to connect the BME280. It is located further away from Maduino and without the ground plane to limit the thermal coupling.
 
@@ -117,7 +117,7 @@ For many reasons (from the planet to the electricity bill) I’ve invested extra
 
 This turned out pretty efficient, with 30mA used during sleep and around 200mA while submitting over 4G. On average, the device uses around 0.17W, which I think is acceptable.
 
-[![Hubert the Humidity Logger, photo 2](images/IMG_1501.jpg)](originals/IMG_1501.jpeg)
+[![Hubert the humidity logger, photo 2](images/IMG_1501.jpg)](originals/IMG_1501.jpeg)
 
 0.15W used when idle, as measured on the USB power supply.
 
