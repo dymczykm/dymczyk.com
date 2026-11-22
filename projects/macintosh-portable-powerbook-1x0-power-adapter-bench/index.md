@@ -63,3 +63,7 @@ Conclusions?
 - The output voltage of M5136 (Mac Portable) strongly drops at 1.5A, but even at 1.0A it’s only ~7.25V. It’s also clearly visible how the recap helped: before it, the voltage at 1.0A was even lower, at 7.0V!
 - M5651 and ADP-17AB behave pretty much the same and could be considered interchangeable.
 - Recapping of ADP-17AB made a big difference under load starting at 1.0A. At 1.5A, it made about a 400mV difference, and at 2.0A even slightly more.
+
+## Can you use a 2A adapter with the Macintosh Portable?
+
+It is hard to say from these measurements alone. What I can say for sure is that the 1.5A and 2A adapters are not equivalent: there is a real, measurable difference, clearly visible in the plot. The 2A adapters put out about 0.3-0.4V more than the M5136 across the whole load range (7.8V instead of 7.5V with no load, and still about 0.4V more at 1.5A), and they hold their voltage up to 2.0A, while the M5136 collapses right after 1.5A.
