@@ -5,6 +5,7 @@ description: "A 3D-printed charger tray for Macintosh Portable lead-acid batteri
 permalink: /projects/macintosh-portable-battery-charger-tray/
 redirect_from:
   - /Macintosh-Portable-Battery-Charger-Tray-f72ddd18b8db4fe281274039afd3407f
+  - /macintosh-portable-battery-charger-tray
 image: /projects/macintosh-portable-battery-charger-tray/images/1_fb695a1003c1489d23b6e6f74204369b.jpg
 date: 2023-08-13
 related:

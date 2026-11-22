@@ -5,6 +5,7 @@ description: "Building a working Macintosh 128K/512K/Plus mouse from an old opti
 permalink: /projects/diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container/
 redirect_from:
   - /DIY-Macintosh-128K-512K-Plus-mouse-from-an-E-Waste-container-0b674e2e4d84493db69c6d5f2adb16ea
+  - /diy-macintosh-128k512kplus-mouse-from-an-e-waste-container
 image: /projects/diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container/images/Untitled.jpg
 date: 2021-05-01
 related:
