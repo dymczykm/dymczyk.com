@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Macintosh Portable & PowerBook 1x0 power adapter bench"
+title: "Macintosh Portable and PowerBook power adapters tested: M5136, M5651, ADP-17AB"
 description: "Bench tests of Macintosh Portable and PowerBook 1x0 power adapters: is recapping worth it, and does the adapter have to be exactly 1.5 A?"
 permalink: /projects/macintosh-portable-powerbook-1x0-power-adapter-bench/
 redirect_from:
@@ -34,7 +34,7 @@ Regarding the claims that using a higher-wattage adapter on the Portable might b
 
 [![Apple Technical Article warning against adapters above 19 W for PowerBook 100 and 150](images/Untitled.png){: width="312" height="86"}](originals/Untitled.png)
 
-## Is it worth recapping?
+## Is it worth recapping the power adapters?
 
 Yes, definitely!
 
@@ -50,7 +50,7 @@ The soldermask was eaten away already and the copper was affected.
 
 Fortunately, the copper traces cleaned up nicely - after recapping they were covered with a PCB lacquer.
 
-## The voltage-current curves or what is the difference between the adapters?
+## Voltage-current curves: M5136 vs. M5651 vs. ADP-17AB
 
 I set up an experiment, loading the PSUs with various combinations of power resistors to record their voltage-current curves.
 

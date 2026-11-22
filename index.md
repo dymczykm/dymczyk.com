@@ -21,10 +21,10 @@ Many of my hobbies are also close to technology, be it audio component design, r
 
 Podcasts I had the pleasure of being a guest on:
 
-- Crazy Wisdom with Stewart Alsop: [https://www.youtube.com/watch?v=ZvWWYJkL6SI](https://www.youtube.com/watch?v=ZvWWYJkL6SI)
-- AI for Founders with Ryan Estes: [https://open.spotify.com/episode/4RIIFNGwTBtCUmR6GEi1nD](https://open.spotify.com/episode/4RIIFNGwTBtCUmR6GEi1nD)
+- [Crazy Wisdom with Stewart Alsop (YouTube)](https://www.youtube.com/watch?v=ZvWWYJkL6SI)
+- [AI for Founders with Ryan Estes (Spotify)](https://open.spotify.com/episode/4RIIFNGwTBtCUmR6GEi1nD)
 
-## Research work
+## Research: visual SLAM and place recognition
 
 My research revolved around Visual SLAM, place recognition, computer vision, state estimation, lifelong mapping and map maintenance, and packing all of that onto computationally constrained devices.
 
@@ -32,27 +32,28 @@ Probably my most influential publications were maplab ([GitHub repo](https://git
 
 [Refer to Google Scholar for more info about my publications](https://scholar.google.com/citations?user=XYHy7U8AAAAJ)
 
-## Hobby/Do-It-Yourself
+## DIY projects and repair notes
+{: #projects}
 
 For a long time I have felt that I gained a lot from open-source projects and DIY guides from various communities, which motivated me to put down some notes and projects below so that others can hopefully benefit from my hobby work too.
 
-### Vintage computing
+### Vintage Macintosh hardware
 
-- [MacTwister MacCon/Dayna/Etherport RJ45 breakout](/projects/mactwister-maccon-dayna-etherport-rj45-breakout/)
-- [Macintosh Classic II / Performa 200 FPU card](/projects/macintosh-classic-ii-performa-200-fpu-card/)
+- [MacTwister: RJ45 breakout for Macintosh SE and SE/30 Ethernet cards](/projects/mactwister-maccon-dayna-etherport-rj45-breakout/)
+- [Macintosh Classic II / Performa 200 FPU card (MC68882)](/projects/macintosh-classic-ii-performa-200-fpu-card/)
 - [DIY Macintosh 128K/512K/Plus mouse **from an e-waste container**](/projects/diy-macintosh-128k-512k-plus-mouse-from-an-e-waste-container/)
-- [Macintosh Portable battery charger tray](/projects/macintosh-portable-battery-charger-tray/)
-- [Macintosh Portable & PowerBook 1x0 power adapter bench](/projects/macintosh-portable-powerbook-1x0-power-adapter-bench/)
+- [3D-printed battery charger tray for the Macintosh Portable](/projects/macintosh-portable-battery-charger-tray/)
+- [Macintosh Portable and PowerBook power adapters tested: M5136, M5651, ADP-17AB](/projects/macintosh-portable-powerbook-1x0-power-adapter-bench/)
 
 ### Saab 900 Classic and the audio system
 
-- [Saab C900 air distribution wiring](/projects/saab-c900-air-distribution-wiring/)
-- [Saab C900 fuel pump part number](/projects/saab-c900-fuel-pump-part/)
-- [Audison Bit One/Ten DRC: DIY cable + display replacement](/projects/audison-bit-one-ten-drc-diy-cable-display-replacement/)
-- [Rupes LHR21 ESC repair](/projects/rupes-lhr21-esc-repair/)
+- [Saab 900 Classic (C900) air distribution switch wiring](/projects/saab-c900-air-distribution-wiring/)
+- [Saab 900 Classic (C900) Turbo fuel pump part number](/projects/saab-c900-fuel-pump-part/)
+- [Audison Bit One / Bit Ten DRC: DIY cable and LCD display replacement](/projects/audison-bit-one-ten-drc-diy-cable-display-replacement/)
+- [Rupes BigFoot LHR21 polisher repair: dead speed controller (ESC)](/projects/rupes-lhr21-esc-repair/)
 
-### Others
+### Test equipment, vintage radio and IoT
 
-- [Tektronix 22xx 4-pin cap adapter](/projects/tektronix-22xx-4-pin-cap-adapter/)
-- [Braun SK2/2 restoration](/projects/braun-sk2-2-restoration/)
-- [Hubert the humidity logger](/projects/hubert-the-humidity-logger/)
+- [Tektronix 22xx (2230, 2232, 2245, 2246) 4-pin capacitor adapter](/projects/tektronix-22xx-4-pin-cap-adapter/)
+- [Braun SK2/2 radio restoration: recapping and repainting](/projects/braun-sk2-2-restoration/)
+- [Hubert: a DIY 4G/LTE humidity logger (SIM7600 + BME280)](/projects/hubert-the-humidity-logger/)

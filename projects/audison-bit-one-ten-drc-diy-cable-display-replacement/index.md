@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Audison Bit One/Ten DRC: DIY cable + display replacement"
+title: "Audison Bit One / Bit Ten DRC: DIY cable and LCD display replacement"
 description: "Audison Bit One / Bit Ten DRC: pinout for a DIY RJ-11 cable and how to replace the remote's faulty LCD display."
 permalink: /projects/audison-bit-one-ten-drc-diy-cable-display-replacement/
 redirect_from:
@@ -36,7 +36,7 @@ My RJ-11 plug:
 
 </aside>
 
-## DRC display replacement
+## Replacing a dead DRC display
 
 My DRC display had a serious issue - most of the lines in the display didn’t work. This is usually caused by the conductive tape between the display PCB and the actual display not making proper contact. All my attempts to reglue the tape failed.
 

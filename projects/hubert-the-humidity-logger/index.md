@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Hubert the humidity logger"
+title: "Hubert: a DIY 4G/LTE humidity logger (SIM7600 + BME280)"
 description: "Hubert: a DIY 4G/LTE humidity logger for a garage, built on the Maduino Zero 4G (SIM7600) and a BME280 sensor. Hardware and firmware notes."
 permalink: /projects/hubert-the-humidity-logger/
 redirect_from:
@@ -28,7 +28,7 @@ To my surprise, I couldn’t find any ready-to-build DIY projects that could ser
 
 </aside>
 
-## Hardware
+## Hardware: Maduino Zero 4G LTE and a BME280 sensor
 
 While searching for relevant projects, I came across [this weather station project](https://www.the-diy-life.com/diy-4g-air-quality-and-environment-monitor-record-data-anywhere/) which uses the [Makerfabs Maduino Zero 4G LTE](https://www.makerfabs.com/maduino-zero-4g-lte-sim7600.html). That looks pretty attractive:
 
@@ -52,7 +52,7 @@ Simple headers to plug in Maduino, 4 LEDs acting as a bargraph to visualize the 
 
 The idea is straightforward - Hubert should wake up at regular intervals (exact time not really critical), take a measurement, submit it to the remote server and go to sleep.
 
-### Taking a measurement
+### Taking a BME280 measurement in forced mode
 
 We only need a measurement every few minutes, so the recommended way is to trigger each BME280 measurement manually. Measuring very often causes the BME280 to heat up and bias the readings.
 
@@ -83,7 +83,7 @@ const float pressure_hpa = bme280.readPressure() / 100;
 const float humidity = bme280.readHumidity();
 ```
 
-### Submitting to the remote server
+### Posting to InfluxDB over 4G with the SIM7600 HTTP commands
 
 The plan here was clear, but as usual with hardware it took a while to get it right. Simcom 7600 offers a built-in HTTP stack that lets you just set all the fields and send a POST/GET request to the server.
 
@@ -113,7 +113,7 @@ It did look like this, but the USERDATA never ended up in the header, so my POST
 
 For more details related to the modem and data POSTing, refer to `influxdb.h` and `sim7600.h` files.
 
-### Going to sleep
+### Low-power sleep for the MCU and the modem
 
 For many reasons (from the planet to the electricity bill) I’ve invested extra effort to make sure Hubert is not eating too much energy. There are two ways to do that:
 
@@ -126,7 +126,7 @@ This turned out pretty efficient, with 30mA used during sleep and around 200mA w
 
 0.15W used when idle, as measured on the USB power supply.
 
-## GUI and UX
+## Dashboard: InfluxDB and Grafana on a Raspberry Pi
 
 For visualizing the data, I followed a recommendation from a colleague at work and used InfluxDB and Grafana. Everything could be set up on my antique Raspberry Pi 1 Model B+.
 
@@ -149,7 +149,7 @@ The onboard indicators work as follows:
 - When idle:
     - Either ACT (green) or ERR (red) blinks for a fraction of a second every 2 seconds indicating whether the last POST action was successful. Given that the device might POST every few minutes, that’s a useful feature to immediately know whether everything worked as expected the last time.
 
-## Case
+## The 3D-printed case
 
 To finalize the project, I designed a 3D-printable case for Hubert. It lets me screw down the breakout board using standoffs, uses light pipes to show the status to the outside world and contains a semi-closed compartment (isolated from the MCU/modem) for the BME280 sensor to reduce heat transfer as much as possible.
 

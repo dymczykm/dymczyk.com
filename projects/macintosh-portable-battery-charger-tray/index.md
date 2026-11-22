@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Macintosh Portable battery charger tray"
+title: "3D-printed battery charger tray for the Macintosh Portable"
 description: "A 3D-printed charger tray for Macintosh Portable lead-acid batteries that makes reliable contact with the recessed terminals. STL included."
 permalink: /projects/macintosh-portable-battery-charger-tray/
 redirect_from:
@@ -13,7 +13,7 @@ related:
   - macintosh-classic-ii-performa-200-fpu-card
 ---
 
-## Why is that useful?
+## Why charge Macintosh Portable batteries outside the computer?
 
 I happen to own three Macintosh Portables. Those computers use a 3-cell lead-acid battery, which consists of Enersys Cyclon cells. The batteries cannot be kept installed in the computer, as they get completely drained within 2-3 months and are irreversibly damaged when stored empty.
 
@@ -27,7 +27,7 @@ Source: [https://www.worthpoint.com/worthopedia/apple-brand-macintosh-portable-1
 
 So the plan was to create something similar using a 3D printer and off-the-shelf components.
 
-## The design
+## The design: a 3D-printed tray with pogo pins
 
 The idea was fairly simple: make a 3D-printable tray that holds the battery and makes reliable contact with the battery contacts.
 
@@ -58,13 +58,13 @@ And that’s it - print it, press the pins into the printed model, solder some w
 
 </aside>
 
-## Usage
+## Charging with an RC battery charger
 
 I used the tray together with an RC battery charger set to charge a 3-cell lead battery. I crimped a typical JST SYP battery connector to make sure the tray is safe, without a possibility to short the battery or to invert the polarity.
 
 [![Macintosh Portable battery in the printed tray, charging from an RC battery charger](images/Untitled.jpg){: width="1600" height="1200" loading="lazy"}](originals/Untitled.jpg)
 
-## Appendix: Macintosh Portable battery cell info
+## Replacement cells for the Macintosh Portable battery (EnerSys Cyclon)
 
 By the way, the original type of cells is still available, I purchased them from the TME electronics distributor and they worked great (and were exactly like the originals):
 

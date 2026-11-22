@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="content">
-  <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/' | relative_url }}#hobbydo-it-yourself">Projects</a></p>
+  <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/' | relative_url }}#projects">Projects</a></p>
   <h1>{{ page.title }}</h1>
   {% if page.date %}<p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %Y' }}</time></p>{% endif %}
   {{ content }}
@@ -18,7 +18,7 @@ layout: default
     </ul>
   </section>
   {% endif %}
-  <p class="back"><a href="{{ '/' | relative_url }}#hobbydo-it-yourself">← All projects</a></p>
+  <p class="back"><a href="{{ '/' | relative_url }}#projects">← All projects</a></p>
 </article>
 <script type="application/ld+json">
 {

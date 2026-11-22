@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Rupes LHR21 ESC repair"
-description: "Repairing a dead Rupes Big Foot LHR21 polisher: diagnosing the brushes, motor and the electronic speed controller (ESC)."
+title: "Rupes BigFoot LHR21 polisher repair: dead speed controller (ESC)"
+description: "Repairing a Rupes BigFoot LHR21 polisher that won't start: the brushes, the motor and the electronic speed controller (ESC) with its T2535 triac."
 permalink: /projects/rupes-lhr21-esc-repair/
 redirect_from:
   - /Rupes-LHR21-ESC-repair-ff81c8125646469bbfcebdc7a87f061a
@@ -27,7 +27,7 @@ So what now? Let’s check the motor.
 
 The first candidate to test was the motor / rotor. That’s easy to test - it’s enough to apply 20-30VDC from a lab power supply to the brushes to confirm the motor starts turning. It did turn, perfect, so the motor is fine.
 
-## Fixing the electronic speed controller
+## Repairing the electronic speed controller (ESC)
 
 So we were left with the last candidate - the ESC. I’ve tried searching online for any leads from people who had tried to repair it, or at least disassemble it. Nothing, it seems nobody has really tried to dig into the circuit. I was not really eager to spend $130 for a new ESC so I decided to give repair a shot.
 
