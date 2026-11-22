@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "MacTwister MacCon/Dayna/Etherport RJ45 breakout"
+title: "MacTwister: RJ45 breakout for Macintosh SE and SE/30 Ethernet cards"
 description: "MacTwister: an open RJ45 breakout board for Macintosh SE and SE/30 Ethernet cards (Asante MacCon, Kinetics/Shiva Etherport, Dayna DaynaPort E/SI)."
 permalink: /projects/mactwister-maccon-dayna-etherport-rj45-breakout/
 redirect_from:
@@ -16,7 +16,7 @@ related:
 
 [![MacTwister RJ45 breakout board for Macintosh SE and SE/30 network cards](images/IMG_1487.png){: width="1600" height="1200"}](originals/IMG_1487.png)
 
-The MacTwister breakout board provides a standard RJ45 port for Macintosh SE and Macintosh SE/30 computers equipped with common Asante MacCon, Kinetics/Shiva Etherport and Dayna DaynaPort E/SI cards.
+The MacTwister breakout board provides a standard RJ45 (10BASE-T twisted pair) Ethernet port for Macintosh SE and Macintosh SE/30 computers equipped with common Asante MacCon, Kinetics/Shiva Etherport and Dayna DaynaPort E/SI cards.
 
 The first motivation is that many of those cards got separated from their breakout boards over the course of more than 30 years, making them virtually useless. At the same time, network card prices keep going up, so reproducing the connector board starts to make economic sense. I myself came across a MacCon for SE which I really wanted to bring back to life.
 
@@ -30,7 +30,7 @@ Goals of the design:
 
 ## Questions & answers
 
-### What’s the deal with two 16-pin connectors?
+### Which 16-pin connector fits which card (MacCon vs. Etherport)?
 
 Kinetics/Shiva Etherport and MacCon cards have different pinouts of the 16-pin cable to the connector card.
 
@@ -51,7 +51,7 @@ MacTwister connected to an early revision of MacCon. Please note the pin 1 marki
 
 Both 16-pin connectors can be used without any changes to the board.
 
-### What’s the deal with three different sockets for transceiver ICs?
+### Which transceiver chips are supported (LXT902PC, AM79C89, T7220)?
 
 This board depends on no-longer-available AUI to twisted pair converters. Those transceivers have been out of production for decades, so this design incorporates three different chips to let you pick a chip that actually shows up on the market: LXT902PC, AM79C89 or T7220 / T7220A.
 
@@ -63,7 +63,7 @@ All three ICs are tested and work fine with a modern Netgear R7000 router.
 
 Swapping chips requires no changes apart from bridging JP4, JP5 and JP6 jumpers to control the status LEDs.
 
-### What was it tested with?
+### Which cards and Macs was it tested with?
 
 The card was tested on the SE (MacCon and Etherport cards) and SE/30 (MacCon).
 

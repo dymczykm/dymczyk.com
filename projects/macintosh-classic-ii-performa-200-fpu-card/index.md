@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Macintosh Classic II / Performa 200 FPU card"
-description: "A DIY MC68882 FPU card for the Macintosh Classic II and Performa 200: design notes, bill of materials and build tips."
+title: "Macintosh Classic II / Performa 200 FPU card (MC68882)"
+description: "An open-source MC68882 FPU (math coprocessor) card for the Macintosh Classic II and Performa 200: design files, benchmarks, bill of materials and build tips."
 permalink: /projects/macintosh-classic-ii-performa-200-fpu-card/
 redirect_from:
   - /Macintosh-Classic-II-Performa-200-FPU-card-58b920714a2843948fefd17b5c4b4849
@@ -14,6 +14,8 @@ related:
 ---
 
 [![Four assembled Macintosh Classic II FPU cards with MC68882 chips](images/Untitled.jpg){: width="1221" height="916"}](originals/Untitled.jpeg)
+
+An open-source expansion card that adds a Motorola MC68882 FPU (floating-point unit, also known as a math coprocessor) to the Macintosh Classic II and its twin, the Performa 200.
 
 This was a fun little project during the first COVID Christmas in 2020. I realized that designing an FPU card for the Classic II doesn’t seem particularly complicated, as it’s mostly about correctly hooking it up to the CPU bus.
 
@@ -28,7 +30,7 @@ The project was published on the 68kMLA forum and on Reddit:
 
 [https://github.com/dymczykm/classic_ii_fpu](https://github.com/dymczykm/classic_ii_fpu)
 
-## Results
+## Results: MacBench floating-point benchmark
 
 After plugging in the card, it should be immediately visible in some tools (here System Information of MacBench):
 

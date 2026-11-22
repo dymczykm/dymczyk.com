@@ -14,13 +14,17 @@ related:
   - macintosh-portable-battery-charger-tray
 ---
 
-I once acquired a Macintosh Plus in pretty good condition locally, but without a mouse or keyboard. A keyboard showed up some weeks later, but I struggled to find a compatible mouse locally in Switzerland.
+I once acquired a Macintosh Plus in pretty good condition locally, but without a mouse or keyboard. A keyboard showed up some weeks later, but I struggled to find a compatible mouse (the original is the Apple M0100) locally in Switzerland.
+
+## The idea: an optical mouse with quadrature outputs
 
 From my undergrad days, I somehow recalled that early optical mouse sensors actually had quadrature outputs, simulating the behavior of mechanical mice with a shutter wheel. That should fit!
 
 The project was triggered after digging out the mouse, a DB-9 connector and an old Ethernet cable from an e-waste container at work (shown here already assembled):
 
 [![Finished DIY Macintosh mouse: a Logitech optical mouse with a DB-9 connector](images/Untitled.jpg){: width="1146" height="1528"}](originals/Untitled.png)
+
+## Wiring the ADNS-2051 sensor to the DB-9 connector
 
 Inside, the ADNS-2051 optical mouse chip directly outputs quadrature signals as required by a Macintosh. No conversion using a microcontroller or any other circuitry is needed.
 
@@ -35,6 +39,8 @@ So it's enough to solder the X1/X2/Y1/Y2 lines to the chip itself (XA/XB/YA/YB).
 Ready to use it with my faithful Plus :)
 
 [![Mouse PCB with wires soldered to the ADNS-2051 quadrature outputs, power and button](images/Untitled%203.jpg){: width="1146" height="1528" loading="lazy"}](originals/Untitled%203.png)
+
+## The result
 
 Aaaand it works!
 

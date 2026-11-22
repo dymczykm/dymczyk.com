@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Braun SK2/2 restoration"
-description: "Restoring a Braun SK2/2 'kitchen' radio, the minimalist 1950s design classic: electronics, case and finishing."
+title: "Braun SK2/2 radio restoration: recapping and repainting"
+description: "Restoring a Braun SK2/2 'kitchen' tube radio, the 1950s design classic: recapping, the selenium rectifier, and repainting the case in RAL 7040 and RAL 9003."
 permalink: /projects/braun-sk2-2-restoration/
 redirect_from:
   - /Braun-SK2-2-restoration-cd9d898268d44af6b4fde3cd4b8d8926
@@ -31,7 +31,7 @@ The internals looked extremely clean as well. It seems nobody had been inside be
 
 [![Braun SK2/2 chassis removed from the case, with tubes and speaker](images/IMG_0155.jpg){: width="1600" height="1200" loading="lazy"}](originals/IMG_0155.jpeg)
 
-## Replacing the capacitors
+## Recapping: paper capacitors and the selenium rectifier
 
 Before connecting the unit to power, there are two spots that require particular attention on Braun SK2/2:
 
@@ -50,7 +50,7 @@ I replaced the capacitors and tried to keep them in their original locations, wi
 
 Most of the new capacitors are foil and axial, making them look almost original.
 
-## Restoring the case
+## Repainting the case: RAL 7040 and RAL 9003
 
 I was more worried about the case. How to strip the original paint without damaging the material? How to paint it to make it look nice?
 

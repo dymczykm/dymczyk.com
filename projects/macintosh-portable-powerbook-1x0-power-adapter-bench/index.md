@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Macintosh Portable & PowerBook 1x0 power adapter bench"
+title: "Macintosh Portable and PowerBook power adapters tested: M5136, M5651, ADP-17AB"
 description: "Bench tests of Macintosh Portable and PowerBook 1x0 power adapters: is recapping worth it, and does the adapter have to be exactly 1.5 A?"
 permalink: /projects/macintosh-portable-powerbook-1x0-power-adapter-bench/
 redirect_from:
@@ -34,7 +34,7 @@ Regarding the claims that using a higher-wattage adapter on the Portable might b
 
 [![Apple Technical Article warning against adapters above 19 W for PowerBook 100 and 150](images/Untitled.png){: width="312" height="86"}](originals/Untitled.png)
 
-## Is it worth recapping?
+## Is it worth recapping the power adapters?
 
 Yes, definitely!
 
@@ -50,7 +50,7 @@ The soldermask was eaten away already and the copper was affected.
 
 Fortunately, the copper traces cleaned up nicely - after recapping they were covered with a PCB lacquer.
 
-## The voltage-current curves or what is the difference between the adapters?
+## Voltage-current curves: M5136 vs. M5651 vs. ADP-17AB
 
 I set up an experiment, loading the PSUs with various combinations of power resistors to record their voltage-current curves.
 
@@ -63,3 +63,7 @@ Conclusions?
 - The output voltage of M5136 (Mac Portable) strongly drops at 1.5A, but even at 1.0A it’s only ~7.25V. It’s also clearly visible how the recap helped: before it, the voltage at 1.0A was even lower, at 7.0V!
 - M5651 and ADP-17AB behave pretty much the same and could be considered interchangeable.
 - Recapping of ADP-17AB made a big difference under load starting at 1.0A. At 1.5A, it made about a 400mV difference, and at 2.0A even slightly more.
+
+## Can you use a 2A adapter with the Macintosh Portable?
+
+It is hard to say from these measurements alone. What I can say for sure is that the 1.5A and 2A adapters are not equivalent: there is a real, measurable difference, clearly visible in the plot. The 2A adapters put out about 0.3-0.4V more than the M5136 across the whole load range (7.8V instead of 7.5V with no load, and still about 0.4V more at 1.5A), and they hold their voltage up to 2.0A, while the M5136 collapses right after 1.5A.
