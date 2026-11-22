@@ -5,6 +5,7 @@ description: "MacTwister: an open RJ45 breakout board for Macintosh SE and SE/30
 permalink: /projects/mactwister-maccon-dayna-etherport-rj45-breakout/
 redirect_from:
   - /MacTwister-MacCon-Dayna-Etherport-RJ45-breakout-fa4aa72b00f247b78a4f9f61c178e177
+  - /mactwister-maccondaynaetherport-rj45-breakout
 image: /projects/mactwister-maccon-dayna-etherport-rj45-breakout/images/IMG_1487.png
 date: 2022-09-10
 related:
