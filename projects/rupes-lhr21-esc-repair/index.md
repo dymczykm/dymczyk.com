@@ -6,11 +6,16 @@ permalink: /projects/rupes-lhr21-esc-repair/
 redirect_from:
   - /Rupes-LHR21-ESC-repair-ff81c8125646469bbfcebdc7a87f061a
 image: /projects/rupes-lhr21-esc-repair/images/download.jpg
+date: 2021-12-11
+related:
+  - saab-c900-fuel-pump-part
+  - audison-bit-one-ten-drc-diy-cable-display-replacement
+  - tektronix-22xx-4-pin-cap-adapter
 ---
 
 To give my Saab 900 a bit more shine, I decided to get a paint polishing machine and came across a non-functional Rupes Big Foot LHR21.
 
-[![Rupes LHR21 ESC repair, photo 1](images/download.jpg)](originals/download.jpeg)
+[![Rupes Big Foot LHR21 polisher](images/download.jpg){: width="1600" height="1200"}](originals/download.jpeg)
 
 ## Checking and correcting the placement of the motor brushes
 
@@ -28,27 +33,27 @@ So we were left with the last candidate - the ESC. I’ve tried searching online
 
 This is what the module looks like:
 
-[![Rupes LHR21 ESC repair, photo 2](images/Untitled.jpg)](originals/Untitled.jpeg)
+[![Rupes LHR21 electronic speed controller (ESC) module](images/Untitled.jpg){: width="1164" height="1552" loading="lazy"}](originals/Untitled.jpeg)
 
 The board is covered in some half-elastic epoxy/polyurethane goo. I had a strong suspicion that you can find the power switching element under the slightly elevated area in the back. So I took a small saw, cut the plastic and then, using a screwdriver (bad idea) and a hot-air gun, dug down until I reached the electronics.
 
 Et voilà:
 
-[![Rupes LHR21 ESC repair, photo 3](images/Untitled.png)](originals/Untitled.png)
+[![Rupes LHR21 ESC with the potting cut open, exposing the coated triac](images/Untitled.png){: width="1164" height="1552" loading="lazy"}](originals/Untitled.png)
 
-[![Rupes LHR21 ESC repair, photo 4](images/Untitled%201.png)](originals/Untitled%201.png)
+[![Rupes LHR21 ESC with a new T2535-800G triac soldered in](images/Untitled%201.png){: width="1164" height="1552" loading="lazy"}](originals/Untitled%201.png)
 
 Here it is, the T2535-800G 25A 800V D2PAK triac. On the right you can already see a new one soldered in.
 
 But… it still didn’t work. Having nothing to lose, I decided to dig out the entire PCB.
 
-[![Rupes LHR21 ESC repair, photo 5](images/IMG_5411.jpg)](originals/IMG_5411.jpg)
+[![Rupes LHR21 ESC PCB dug out of the potting, with the cut triac trace marked](images/IMG_5411.jpg){: width="1277" height="1600" loading="lazy"}](originals/IMG_5411.jpg)
 
 Now it’s clear - when trying to remove the epoxy substance around the triac to replace it, I accidentally cut the trace that controls the triac.
 
 Additionally, when removing the PCB and digging out all the gunk, we lost the “sensor” used to sense the RPM of the motor shaft. Too bad. Let’s get it fixed.
 
-[![Rupes LHR21 ESC repair, photo 6](images/IMG_5437.jpg)](originals/IMG_5437.jpg)
+[![Repaired Rupes LHR21 ESC PCB with a wire bridge and the replacement 10 mH inductor](images/IMG_5437.jpg){: width="1600" height="884" loading="lazy"}](originals/IMG_5437.jpg)
 
 Sorry for the ugly, thick wire next to the triac - this was only a test made out of the first solderable conductive part that I had on the bench 😅
 

@@ -2,8 +2,31 @@
 layout: default
 ---
 <article class="content">
-  <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> / Projects</p>
+  <p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/' | relative_url }}#hobbydo-it-yourself">Projects</a></p>
   <h1>{{ page.title }}</h1>
+  {% if page.date %}<p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %Y' }}</time></p>{% endif %}
   {{ content }}
+  {% if page.related %}
+  <section class="related">
+    <h2>Related projects</h2>
+    <ul>
+    {% for slug in page.related %}
+      {% assign rel_url = '/projects/' | append: slug | append: '/' %}
+      {% assign rel = site.pages | where: "url", rel_url | first %}
+      {% if rel %}<li><a href="{{ rel.url | relative_url }}">{{ rel.title }}</a></li>{% endif %}
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
   <p class="back"><a href="{{ '/' | relative_url }}#hobbydo-it-yourself">← All projects</a></p>
 </article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": "{{ page.url | absolute_url }}" }
+  ]
+}
+</script>

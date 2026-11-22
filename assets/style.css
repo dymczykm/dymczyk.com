@@ -42,3 +42,7 @@ p, li, td, th { overflow-wrap: anywhere; }
 td, th { overflow-wrap: normal; }
 p a, li a { overflow-wrap: anywhere; }
 h1, h2, h3 { overflow-wrap: anywhere; }
+.meta { color: var(--muted); font-size: .9rem; margin: -1rem 0 1.5rem; }
+.related { margin-top: 3rem; border-top: 1px solid var(--rule); }
+.related h2 { font-size: 1.15rem; margin-top: 1.5rem; }
+.related ul { padding-left: 1.2rem; }

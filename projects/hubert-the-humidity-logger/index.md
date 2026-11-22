@@ -6,6 +6,11 @@ permalink: /projects/hubert-the-humidity-logger/
 redirect_from:
   - /Hubert-the-Humidity-Logger-98149460e49f499b93c4ded26121b366
 image: /projects/hubert-the-humidity-logger/images/Maduino-Zero-4G-LTE-SIM7600X-1000x750.jpg
+date: 2023-06-17
+related:
+  - saab-c900-air-distribution-wiring
+  - saab-c900-fuel-pump-part
+  - rupes-lhr21-esc-repair
 ---
 
 I keep a Saab 900 from 1992 as a fun/project car and I’m generally trying to preserve it well to the extent that is reasonably possible.
@@ -31,7 +36,7 @@ While searching for relevant projects, I came across [this weather station proje
 - It includes a Simcom 7600E modem, which supports 3G/4G/LTE (2G is already getting switched off where I live) and is able to shoot HTTP requests
 - It has a convenient pin header to connect a breakout board with peripherals.
 
-[![Maduino Zero 4G LTE board](images/Maduino-Zero-4G-LTE-SIM7600X-1000x750.jpg)](originals/Maduino-Zero-4G-LTE-SIM7600X-1000x750.jpg)
+[![Makerfabs Maduino Zero 4G LTE board (SIM7600) with antennas](images/Maduino-Zero-4G-LTE-SIM7600X-1000x750.jpg){: width="1000" height="750"}](originals/Maduino-Zero-4G-LTE-SIM7600X-1000x750.jpg)
 
 Maduino Zero 4G LTE board
 
@@ -39,7 +44,7 @@ To actually measure the humidity, I decided to use a simple Bosch BME280 breakou
 
 The breakout board to host Maduino turned out pretty simple:
 
-[![Hubert the humidity logger, photo 1](images/Screenshot_2023-08-13_at_22.35.40.png)](originals/Screenshot_2023-08-13_at_22.35.40.png)
+[![Hubert breakout board PCB layout with Maduino headers, humidity LED bargraph and BME280 connector](images/Screenshot_2023-08-13_at_22.35.40.png){: width="1382" height="1446" loading="lazy"}](originals/Screenshot_2023-08-13_at_22.35.40.png)
 
 Simple headers to plug in Maduino, 4 LEDs acting as a bargraph to visualize the humidity level directly, ACT and ERR LEDs to show that something is going on (or not 🙃). Additionally, a 6-pin header to connect the BME280. It is located further away from Maduino and without the ground plane to limit the thermal coupling.
 
@@ -117,7 +122,7 @@ For many reasons (from the planet to the electricity bill) I’ve invested extra
 
 This turned out pretty efficient, with 30mA used during sleep and around 200mA while submitting over 4G. On average, the device uses around 0.17W, which I think is acceptable.
 
-[![Hubert the humidity logger, photo 2](images/IMG_1501.jpg)](originals/IMG_1501.jpeg)
+[![USB power meter showing Hubert drawing 0.15 W while idle](images/IMG_1501.jpg){: width="1600" height="1019" loading="lazy"}](originals/IMG_1501.jpeg)
 
 0.15W used when idle, as measured on the USB power supply.
 
@@ -148,10 +153,10 @@ The onboard indicators work as follows:
 
 To finalize the project, I designed a 3D-printable case for Hubert. It lets me screw down the breakout board using standoffs, uses light pipes to show the status to the outside world and contains a semi-closed compartment (isolated from the MCU/modem) for the BME280 sensor to reduce heat transfer as much as possible.
 
-[![Hubert's 3D-printable case designed in Fusion 360](images/hubert_fusion360.png)](originals/hubert_fusion360.png)
+[![Hubert's 3D-printable case designed in Fusion 360](images/hubert_fusion360.png){: width="1600" height="1380" loading="lazy"}](originals/hubert_fusion360.png)
 
 In reality, the case turned out pretty nice. Maybe the text is not super crisp, but I still like it a lot!
 
-[![Hubert during early testing at home. Apparently, the humidity is within the green range!](images/IMG_1504.jpg)](originals/IMG_1504.jpeg)
+[![Hubert the humidity logger in its 3D-printed case, green LED lit](images/IMG_1504.jpg){: width="1008" height="756" loading="lazy"}](originals/IMG_1504.jpeg)
 
 Hubert during early testing at home. Apparently, the humidity is within the green range!
